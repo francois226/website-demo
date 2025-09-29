@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1a284d 0%, #273c75 100%);
+  color: #f3f6fb;
+  min-height: 100vh;
+}
+
+.dashboard {
+  padding: 30px 0;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: #2ec4b6;
+}
+
+.dashboard-header span {
+  color: #1a284d;
+  background: linear-gradient(90deg, #6dd5ed, #2193b0);
+  border-radius: 8px;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.dashboard-content {
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(24,34,68, 0.87);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 #0a234260;
+  padding: 32px 30px;
+  min-width: 340px;
+  max-width: 420px;
+  flex: 1 1 340px;
+  animation: fadeInUp 1.2s cubic-bezier(.65,.05,.36,1) both;
+}
+
+.animated { animation-delay: 0.2s; }
+.delay1 { animation-delay: 0.55s; }
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+.finance-section h2, .map-section h2 {
+  color: #6dd5ed;
+  margin-bottom: 18px;
+}
+
+.balance {
+  background: linear-gradient(90deg,#2ec4b6 10%,#2193b0 80%);
+  color: #fff;
+  border-radius: 10px;
+  padding: 14px 28px;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px 0 #2193b030;
+}
+
+.balance h3 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.expenses-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.expenses-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px solid #2ec4b6;
+  font-size: 1.08rem;
+}
+
+.amount { color: #f44336; font-weight: 600; }
+
+.visited-list {
+  margin-top: 16px;
+  color: #c8e6ff;
+  font-size: 1.1rem;
+}
